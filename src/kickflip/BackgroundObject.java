@@ -30,9 +30,23 @@ public class BackgroundObject
         this.x = x;
     }
 
+    public void setY( int y )
+    {
+        this.y = y;
+    }
+    
     public void updateLocation()
     {
         x += xSpeed;
         y += ySpeed;
+    }
+    
+    public Boolean isOnScreen()
+    {
+        if (x > -500)
+        {
+            return true;
+        }
+        return false;
     }
 }

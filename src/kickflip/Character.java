@@ -74,6 +74,7 @@ public class Character
             y -= 5;
             ySpeed = -15;
             dyspeed = -15;
+            System.out.println("FLOOR: " + floor);
         }
     }
     
@@ -91,7 +92,6 @@ public class Character
     {
         if (y < floor && jumped)
         {
-            System.out.println(ySpeed);
             if (ySpeed == -13)
             {
                 displayedImage = sp3;
